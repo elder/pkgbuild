@@ -1,0 +1,12 @@
+Descrição
+=========
+Este repositório guarda o PKGBUILD de pacotes que mantenho no AUR ou que
+modifiquei utilizando o ABS (Arch Build System).
+Você pode copiar ou modificar esses arquivos à vontade, desde que dê os
+devidos créditos, é claro.
+
+Licença
+=======
+GPLv3+
+
+Elder Marco <eldermarco AT gmail.com>
