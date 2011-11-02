@@ -63,10 +63,10 @@ package() {
     cp -pr lib/* "$pkgdir/opt/$pkgname/lib/"
 
     # Source Code and others (Yes, the program needs this...)
-    mkdir -p "$pkgdir/opt/cwpsu/src"
+    mkdir -p "$pkgdir/opt/$pkgname/src"
     for _dir in doc cwp par psplot xplot Xtcwp 3D \
                 Xmcwp su tri tetra faq comp xtri; do
-        cp -pr "src/$_dir" "$pkgdir/opt/cwpsu/src"
+        cp -pr "src/$_dir" "$pkgdir/opt/$pkgname/src"
     done
 
     # Environment Variables
