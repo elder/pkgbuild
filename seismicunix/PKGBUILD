@@ -1,6 +1,6 @@
 # Maintainer:  Elder Marco <eldermarco at gmail dot com>
 
-pkgname=cwpsu
+pkgname=seismicunix
 _pkgname=cwp_su_all
 pkgver=42
 pkgrel=4
