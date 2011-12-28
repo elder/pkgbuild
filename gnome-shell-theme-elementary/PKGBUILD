@@ -31,7 +31,7 @@ package () {
         "$pkgdir/usr/share/themes/${_theme}/gnome-shell/"
 
     # delete backup files (*~)
-    find "$pkgdir" -name *~ -type f -exec rm -f '{}' \;
+    find "$pkgdir" -name '*~' -type f -exec rm -f '{}' \;
 
     # Remove LICENSE file from $pkgdir
     find "$pkgdir" -name LICENSE -type f -exec rm -f '{}' \;
