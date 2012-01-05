@@ -19,7 +19,7 @@ md5sums=('7d95cb3369bf80af5b450c7e5bbd9a38')
 package () {
     cd "$srcdir"
     _theme=Elementary
-    _theme_zip=Elementary-3.2
+    _theme_zip=${_theme}-3.2
 
     unzip "${_theme_zip}.zip"
     cd "${_theme_zip}"
