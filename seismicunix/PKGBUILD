@@ -77,7 +77,7 @@ package () {
     install -m0755 "${pkgname}.sh" "$pkgdir/etc/profile.d/"
     install -m0755 "${pkgname}.csh" "$pkgdir/etc/profile.d/"
 
-    # License file and acknowledgments
+    # License file and acknowledgements
     install -d -m0755 "$pkgdir/usr/share/licenses/$pkgname"
     install -p -m0644 src/LEGAL_STATEMENT  \
         "$pkgdir/usr/share/licenses/$pkgname/COPYING"
