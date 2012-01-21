@@ -2,14 +2,14 @@
 
 pkgname=gnome-shell-theme-elegano
 pkgver=0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="The EleganO gnome-shell theme"
-url="http://omnsandlinux.deviantart.com/art/Gnome-Shell-EleganO-269559194"
+url="http://msuggs.deviantart.com/art/EleganO-274346366"
 license=('GPL' 'LGPL2.1')
 arch=('any')
 depends=('gnome-shell>=3.2.0' 'gnome-shell-extension-user-theme')
 optdepends=('gnome-tweak-tool: A tool to customize advanced GNOME 3 options')
-source=('http://www.deviantart.com/download/269559194/gnome_shell___elegano_by_omnsandlinux-d4ghl7e.zip')
+source=('http://www.deviantart.com/download/274346366/elegano_by_msuggs-d4jc70e.zip')
 md5sums=('3f69fdbd0c05869e2e8bcfa0c20dbf91')
 
 package () {
