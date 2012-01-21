@@ -19,8 +19,9 @@ package () {
     cd "$srcdir/EleganO"
 
     # The theme
-    mkdir -p -m755 "$pkgdir/usr/share/themes/EleganO/gnome-shell"
-    cp -pr gnome-shell/* "$pkgdir/usr/share/themes/EleganO/gnome-shell/"
+    mkdir -p "$pkgdir/usr/share/themes/EleganO/gnome-shell"
+    install -Dp -m0644 gnome-shell/* \
+        "$pkgdir/usr/share/themes/EleganO/gnome-shell/"
 
     # Remove backup files
     find "$pkgdir" -name '*~' -type f -exec rm -f '{}' \;
