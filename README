@@ -1,12 +1,39 @@
 Descrição
 =========
-Este repositório guarda o PKGBUILD de pacotes que mantenho no AUR ou que
-modifiquei utilizando o ABS (Arch Build System).
-Você pode copiar ou modificar esses arquivos à vontade, desde que dê os
-devidos créditos, é claro.
+    Repositório com o PKGBUILD de pacotes que mantenho no AUR, modificados a partir
+do ABS ou que, embora presentes no AUR, prefiri manter a minha própria versão
+por algum motivo.
+    Você pode encontrar uma lista dos pacotes mantidos por mim no AUR acessando o
+endereço:
+
+        https://aur.archlinux.org/packages.php?K=eldermarco&SeB=m
+
+Se por algum motivo você quiser criar um pacote com um PKGBUILD daqui, proceda
+da seguinte forma:
+
+    * Instale o git em seu sistema e copie o projeto para a sua área de
+      trabalho:
+
+        $ git clone git://github.com/elder/pkgbuild.git
+
+    * Entre no diretório no pacote que você queira compilar e utilize o makepkg
+      para iniciar o processo e gerar o pacote. Por exemplo, para o gpaste:
+
+        $ cd pkgbuild/gpaste
+        $ makepkg -cs
+
+    * Depois basta apenas instalar o pacote gerado no diretório atual:
+
+        # pacman -U gpaste-<versão>-<arquitetura>.pkg.tar.xz
+
+    Simples assim. ;)
+
+    Você pode copiar ou modificar esses arquivos à vontade, desde que dê os
+    devidos créditos, é claro.
 
 Licença
 =======
 GPLv3+
 
-Elder Marco <eldermarco AT gmail.com>
+---
+Elder Marco
