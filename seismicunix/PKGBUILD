@@ -31,23 +31,18 @@ build () {
     patch -Np1 -i ../$pkgname-$pkgver-no-questions.patch
     export CWPROOT="$srcdir"
 
-    # Basic set of codes
-    make install
+    # These codes are essential. Please, don't change anything
+    # below.
+    make install        # Basic set of code
+    make xtinstall      # X-toolkit applications
 
-    # X-toolkit applications
-    make xtinstall
-
-    # Motif application
-    make xminstall
-
-    # Fortran codes
-    make finstall
-
-    # Mesa/OpenGL items
-    make mglinstall
-
-    # libcwputils
-    make utils
+    # The rest are nonessential. You can comment these lines, if
+    # you want.
+    make finstall       # Fortran codes
+    make mglinstall     # Mesa/OpenGL items
+    make xminstall      # Motif application
+    make sfinstall      # Sfio materials and SEGDREAD
+    make utils          # libcwputils
 }
 
 package () {
