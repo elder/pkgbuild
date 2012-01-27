@@ -4,7 +4,7 @@ pkgname=seismicunix
 _pkgname=cwp_su_all
 pkgver=43.1
 _pkgver=43R1
-pkgrel=1
+pkgrel=2
 pkgdesc="Open source software for seismic research and seismic processing"
 
 license=('BSD')
@@ -22,8 +22,8 @@ arch=('i686' 'x86_64')
 md5sums=('ce03c359022e91eff8c5fbc1e3a89c38'
          '45a6c3a541946ea9035325583d802abf'
          '82176ba5202a957b04bc94562c28bada'
-         '9b1f8dd11bc33f4b52c5db9870817d54'
-         '2984eab8f0481f9d9c510d1ce6c48519')
+         'f771218196bd48d00af0386f49ba822c'
+         '1e3e52c31cb4b2599a4efebb4aabddbf')
 
 build () {
     cd "$srcdir/src"
