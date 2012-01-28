@@ -62,7 +62,7 @@ package () {
 
     # Source Code and others
     mkdir -p "$pkgdir/opt/$pkgname/src"
-    find src/ -maxdepth 1 -type d -exec cp -pr '{}' "$pkgdir/opt/$pkgname/src/" \;
+    find src/*  -maxdepth 0 -type d -exec cp -pr '{}' "$pkgdir/opt/$pkgname/src/" \;
     rm -rf "$pkgname/opt/$pkgname/src/configs" \
            "$pkgname/opt/$pkgname/src/Portability"
 
