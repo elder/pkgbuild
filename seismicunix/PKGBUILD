@@ -62,10 +62,9 @@ package () {
 
     # Source Code and others
     mkdir -p "$pkgdir/opt/$pkgname/src"
-    for _dir in doc cwp par psplot xplot Xtcwp 3D \
-                Xmcwp su tri tetra faq comp xtri; do
-        cp -pr "src/$_dir" "$pkgdir/opt/$pkgname/src"
-    done
+    find src/ -maxdepth 1 -type d -exec cp -pr '{}' "$pkgdir/opt/$pkgname/src/" \;
+    rm -rf "$pkgname/opt/$pkgname/src/configs" \
+           "$pkgname/opt/$pkgname/src/Portability"
 
     # Environment Variables
     install -d -m0755 "$pkgdir/etc/profile.d"
