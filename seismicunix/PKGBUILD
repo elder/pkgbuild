@@ -15,7 +15,7 @@ source=("ftp://ftp.cwp.mines.edu/pub/cwpcodes/${_pkgname}_${_pkgver}.tgz"
         "$pkgname.sh"
         "$pkgname.csh")
 
-makedepends=('libxmu' 'libxi' 'mesa' 'freeglut' 'lesstif' 'gcc-fortran')
+makedepends=('ed' 'libxmu' 'libxi' 'mesa' 'freeglut' 'lesstif' 'gcc-fortran')
 depends=('libxmu' 'libxi' 'mesa' 'freeglut' 'lesstif')
 
 arch=('i686' 'x86_64')
