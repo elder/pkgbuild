@@ -67,15 +67,15 @@ package () {
            "$pkgname/opt/$pkgname/src/Portability"
 
     # Environment Variables
-    install -d -m0755 "$pkgdir/etc/profile.d"
-    install -m0755 "${pkgname}.sh" "$pkgdir/etc/profile.d/"
-    install -m0755 "${pkgname}.csh" "$pkgdir/etc/profile.d/"
+    install -d -m755 "$pkgdir/etc/profile.d"
+    install -m755 "${pkgname}.sh" "$pkgdir/etc/profile.d/"
+    install -m755 "${pkgname}.csh" "$pkgdir/etc/profile.d/"
 
     # License file and acknowledgements
-    install -d -m0755 "$pkgdir/usr/share/licenses/$pkgname"
-    install -p -m0644 src/LEGAL_STATEMENT  \
+    install -d -m755 "$pkgdir/usr/share/licenses/$pkgname"
+    install -p -m644 src/LEGAL_STATEMENT  \
         "$pkgdir/usr/share/licenses/$pkgname/COPYING"
-    install -p -m0644 src/ACKNOWLEDGEMENTS \
+    install -p -m644 src/ACKNOWLEDGEMENTS \
         "$pkgdir/usr/share/licenses/$pkgname/"
 }
 # expandtab:tabstop=4:shiftwidth=4
