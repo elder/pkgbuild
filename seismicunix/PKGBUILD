@@ -2,14 +2,13 @@
 
 pkgname=seismicunix
 _pkgname=cwp_su_all
-pkgver=43.1
-_pkgver=43R1
+pkgver=43R1
 pkgrel=2
 pkgdesc="Open source software for seismic research and seismic processing"
 
 license=('BSD')
 url="http://www.cwp.mines.edu/cwpcodes/"
-source=("ftp://ftp.cwp.mines.edu/pub/cwpcodes/${_pkgname}_${_pkgver}.tgz"
+source=("ftp://ftp.cwp.mines.edu/pub/cwpcodes/${_pkgname}_${pkgver}.tgz"
         "$pkgname-$pkgver-makefile-config.patch"
         "$pkgname-$pkgver-no-questions.patch"
         "$pkgname.sh"
