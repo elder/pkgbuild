@@ -9,7 +9,7 @@ license=('GPL3')
 url="https://github.com/sardemff7/purple-events"
 source=("https://github.com/downloads/sardemff7/$pkgname/$pkgname-$pkgver.tar.xz")
 
-makedepends=('glib2' 'libpurple>=2.6.0')
+makedepends=('glib2' 'libpurple>=2.6.0' 'perl-xml-parser')
 options=(!libtool)
 
 depends=('glib2' 'libpurple>=2.6.0' 'pidgin')
