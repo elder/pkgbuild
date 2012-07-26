@@ -2,7 +2,7 @@
 
 pkgname=purple-events
 pkgver=0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="libpurple events handling plugin and library"
 
 license=('GPL3')
